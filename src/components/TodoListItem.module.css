@@ -37,14 +37,11 @@
     border-top: 1px solid #dee2e6;
 }
 
-.TodoList.checked svg {
+.checked svg {
     color:#22b8cf;
 }
 
-.TodoList.false .text { 
+.checked .text { 
     color: #adb5bd;
     text-decoration: line-through;
 }
-
-
-

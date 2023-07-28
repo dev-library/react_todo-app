@@ -6,7 +6,7 @@ import styles from './TodoListItem.module.css';
 const TodoListItem = (props) => {
     return(
         <div className={styles.TodoListItem}>
-            <div className={styles.checkbox}>
+            <div className={`${styles.checkbox} ${props.todo.checked ? styles.checked : ''}`}>
                 {/* 삼항 연산자로 체크여부를 따져서 체크된 아이콘이 보일지 아니면 체크안된 아이콘이 보일지 결정 */}
                 {props.todo.checked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
                 <div className={styles.text}>{props.todo.text}</div>
